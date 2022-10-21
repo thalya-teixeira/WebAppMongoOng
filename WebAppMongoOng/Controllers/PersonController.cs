@@ -38,7 +38,7 @@ namespace WebAppMongoOng.Controllers
         #endregion
 
         #region Lista pelo nome
-        [HttpGet("{name}", Name = "GetName")]
+        [HttpGet("{name}", Name = "GetNamePerson")]
         public ActionResult<Person> GetByName(string n)
         {
             var person = _personService.GetByName(n);

@@ -33,7 +33,7 @@ namespace WebAppMongoOng.Service
         #endregion
 
         #region Busca pelo nome
-        public List<Animal> GetByName(string name) => _animal.Find<Animal>(animal => animal.Name == name).ToList();
+        public List<Animal> GetByName(string n) => _animal.Find<Animal>(animal => animal.Name == n).ToList();
         #endregion
 
         #region Updat Animal
